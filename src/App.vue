@@ -1,21 +1,19 @@
 <template>
   <div id="app">
     <Navbar />
-    <Header />
+    <router-view/>
     <Footer />
   </div>
 </template>
 
 <script>
 import Navbar from './components/Navbar.vue';
-import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
 
 export default {
   name: 'App',
   components: {
     Navbar,
-    Header,
     Footer
   }
 }
@@ -24,7 +22,7 @@ export default {
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap');
 
-html {
+#app {
   background-color: #1D1135;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
@@ -67,11 +65,3 @@ ul {
   padding: 10px;
   letter-spacing: 3px;
 }
-.btn-primary {
-  background-color: #7649FE;
-}
-.btn-secondary {
-  background-color: #BA1E68;
-}
-
-</style>
