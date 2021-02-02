@@ -8,6 +8,7 @@ Made in Vue, using grid, plain CSS, and will probably be hosted on Azure.
 [ ] Add grid to website 
 [ ] Create a card
 [ ] Create generic setup pages
+[ ] Fix footer
 
 ## Project setup
 ```

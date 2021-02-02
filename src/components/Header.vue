@@ -6,12 +6,20 @@
       <h2>{{ subtitle }}</h2>
       <button class="btn btn-primary">Do something</button>
     </div>
+    <div id="cards">
+      <Card />
+    </div>
   </div>
 </template>
 
 <script>
+import Card from '../components/Card';
+
 export default {
   name: 'Header',
+  components: {
+    Card,
+  },
   data() {
     return {
       title: 'Melanie de Leeuw',

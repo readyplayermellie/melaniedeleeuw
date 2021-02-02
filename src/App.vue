@@ -35,7 +35,8 @@ html {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   margin: 0;
   font-family: 'Lato', sans-serif;
   font-weight: 100;
@@ -46,6 +47,8 @@ h2 {
 
 p {
   margin: 0;
+  font-weight: 100;
+  letter-spacing: 3px;
 }
 
 a {
