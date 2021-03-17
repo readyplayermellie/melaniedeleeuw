@@ -2,19 +2,16 @@
   <div id="app">
     <Navbar />
     <router-view class="view"/>
-    <Footer />
   </div>
 </template>
 
 <script>
 import Navbar from './components/Navbar.vue';
-import Footer from './components/Footer.vue'
 
 export default {
   name: 'App',
   components: {
     Navbar,
-    Footer
   }
 }
 </script>
@@ -22,62 +19,50 @@ export default {
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap');
 
-html {
-  background-color: #1D1135;
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body {
+  background-color: #000619;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   color: #FCFBFE;
-  height: 100vh;
 }
 
 .view {
-  padding: 15px;
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8%;
+  margin-bottom: 8%;
+}
+h1  { 
+  font-size: 2.6em;
+  text-align: center;
+} 
+     
+h2 { 
+  font-size: 2.0em;
+} 
+    
+p { 
+  font-size: 1.2em;
+  font-weight: 300;
+  letter-spacing: 3px;
 }
 
 h1,
 h2,
 h3 {
-  margin: 0;
-  font-family: 'Lato', sans-serif;
-  font-weight: 100;
-  color: #FCFBFE;
+  font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 5px;
 }
-
-p {
-  margin: 0;
-  font-weight: 100;
-  letter-spacing: 3px;
-}
-
 a {
   text-decoration: none;
   color: #FCFBFE;
-  margin: 0;
-}
-
-ul {
-  list-style: none;
-  margin: 0;
-}
-
-.btn {
-  border-radius: 50px;
-  text-transform: uppercase;
-  font-family: 'Lato', sans-serif;
-  color: #FCFBFE;
-  font-weight: 300;
-  width: 260px;
-  padding: 10px;
-  letter-spacing: 3px;
-}
-
-.btn-primary {
-  background-color: #7649FE;
-}
-.btn-secondary {
-  background-color: #BA1E68;
 }
 
 </style>

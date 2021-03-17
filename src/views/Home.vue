@@ -1,16 +1,19 @@
 <template>
-  <div>
-    <Header />
-  </div>
+    <TypeTitle :title="title"/>
 </template>
 
 <script>
-import Header from '../components/Header';
+import TypeTitle from '../components/TypeTitle'
 
 export default {
   name: 'Home',
   components: {
-    Header,
+    TypeTitle,
+  },
+  data() {
+    return {
+      title: '[Welcome to Ready Player Mellie]',
+    }
   }
 }
 </script>
